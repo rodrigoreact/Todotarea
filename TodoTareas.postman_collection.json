@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "",
+		"name": "TodoTareas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19180732"
+	},
+	"item": [
+		{
+			"name": "POST para ingresar una tarea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\":\"Ir a dejar un recado\",\r\n\"description\":\"Ir a la casa de la vecina a...\",\r\n\"status\":\"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:65239/api/v1/todo",
+					"host": [
+						"localhost"
+					],
+					"port": "65239",
+					"path": [
+						"api",
+						"v1",
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificaruna tarea",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\":\"Ir a dejar un recado\",\r\n\"description\":\"Ir a la casa de la vecina a...\",\r\n\"status\":\"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:65239/api/v1/todo/1",
+					"host": [
+						"localhost"
+					],
+					"port": "65239",
+					"path": [
+						"api",
+						"v1",
+						"todo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener una tarea",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"rod\",\r\n    \"email\":\"rod@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:65239/api/v1/todo",
+					"host": [
+						"localhost"
+					],
+					"port": "65239",
+					"path": [
+						"api",
+						"v1",
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar una tarea por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\":\"Ir a dejar un recado\",\r\n\"description\":\"Ir a la casa de la vecina a...\",\r\n\"status\":\"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:65239/api/v1/todo/1",
+					"host": [
+						"localhost"
+					],
+					"port": "65239",
+					"path": [
+						"api",
+						"v1",
+						"todo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
