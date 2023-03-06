@@ -28,12 +28,3 @@ app.use(todoRouter);
 app.listen(PORT, () => {
     console.log(`servidor escuchando en puerto ${PORT}`);
 })
-
-
-
-
-
-
-
-
-
